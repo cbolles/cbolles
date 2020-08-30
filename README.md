@@ -1,16 +1,12 @@
-### Hi there 👋
+Hi! I'm Collin Bolles a Computer Science student at RIT minoring in Computer Engineering. Currently I am on CO-OP working for Herrick Technology Labs in Maryland.
 
-<!--
-**cbolles/cbolles** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Projects I'm Working on
+#### Firmware Team Lead for the Electric Vehicle Team
+Developing firmware written in C++ for the team's electric race vehicles. Working
+directly with the HAL to write custom device drivers for our custom hardware.
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Interests
+* Embedded development
+* Cloud based computing
+* Electric Vehicles
+* UAVs
