@@ -22,3 +22,5 @@ identifying the individual video game boxes and prepping the images to run the t
 * Embedded development
 * Cloud based computing
 * UAVs
+
+For information about me, feel free to check out my resume in this repo.

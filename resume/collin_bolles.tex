@@ -1,0 +1,205 @@
+\documentclass{article}
+\usepackage[margin=0.25in]{geometry}% http://ctan.org/pkg/geometry
+\usepackage{flowfram}% http://ctan.org/pkg/flowfram
+\usepackage{graphicx,lipsum}% http://ctan.org/pkg/{graphicx,lipsum}
+\usepackage{anyfontsize}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{tikz}
+
+% Set no indents before paragraphs
+\setlength{\parindent}{0in}
+
+% Left column frame
+\newdynamicframe[1]{0.30\textwidth}{1\textheight}
+  {-5pt}{0pt}[leftcolumn]
+
+% Right column frame
+\newflowframe{0.7\textwidth}{1\textheight}
+  {0.3\textwidth}{0pt}[rightcolumn]
+
+% Custom color creationg
+\definecolor{header-blue}{RGB}{3, 152, 252}
+
+% Custom section header
+\newcommand{\rSection}[1] {
+  \textcolor{header-blue} {
+    \textbf{{\fontsize{0.5cm}{0.45cm}\selectfont \hbox{#1}}} \\
+    \rule{0.30\textwidth}{0.1cm}
+  }
+}
+
+% Custom sub-section header
+\newcommand{\rSubSection}[1] {
+  \textbf{{\fontsize{0.4cm}{0.45cm}\selectfont \hbox{#1}}}
+}
+
+% Custom sub-sub-section header
+\newcommand{\rSubSubSection}[1] {
+  \textbf{{\fontsize{0.35cm}{0.45cm}\selectfont \hbox{#1}}}
+}
+
+% Proficency Level View
+\newcommand\level[2]{%
+  \tikz{%
+    \ifx#20
+    \else
+      \foreach \i in {1,...,#2} {
+        \filldraw[black!20] (\i ex,0) circle (0.4ex);
+      };
+    \fi
+    \ifx#10
+    \else
+      \foreach \i in {1,...,#1} {
+        \filldraw[black] (\i ex,0) circle (0.4ex);
+      };
+    \fi
+  }
+}
+
+\begin{document}
+
+\begin{dynamiccontents*}{leftcolumn}
+
+
+  % Name
+  {\fontsize{40}{50}\selectfont Collin}\par\bigskip
+  {\fontsize{40}{50}\selectfont Bolles}\par\bigskip
+
+  % Contact information
+  \begin{tabular}{rl}
+    \faSend & collinbolles@gmail.com\\
+    \faGithub & cbolles \\
+    \faLinkedin & collinbolles \\
+    \faPhone & (518)441-4927
+  \end{tabular} \bigskip \par
+
+  % Summary
+  \rSection{Intro}
+  Computer Science student looking for a Summer 2021 co-op with a wide range of
+  computing experience including embedded development, cloud computing, and backend web development.
+  \par \bigskip
+
+  % Skills Sections
+  \rSection{Skills and Proficiency}
+
+  % Languages
+  \rSubSection{Languages} \par \bigskip
+  \begin{tabular}{p{3cm} l}
+    ARM Assembly & \level{1}{5} \\
+    C & \level{4}{5} \\
+    C\# & \level{3}{5} \\
+    C++ & \level{3}{5} \\
+    HTML/CSS & \level{4}{5} \\
+    Java & \level{5}{5} \\
+    JavaScript & \level{3}{5} \\
+    Python & \level{5}{5}
+  \end{tabular} \par \bigskip
+
+  % Frameworks and Libraries
+  \rSubSection{Frameworks and Libraries} \par \bigskip
+  \begin{tabular}{p{3cm} l}
+    Django & \level{3}{5} \\
+    Flask & \level{3}{5} \\
+    Mbed & \level{2}{5} \\
+    Node.js & \level{3}{5} \\
+    React.js & \level{3}{5} \\
+    Requests & \level{4}{5} \\
+    Spring Boot & \level{3}{5}
+  \end{tabular} \par \bigskip
+
+  % Tools and Environments
+  \rSubSection{Tools and Environments} \par \bigskip
+  \begin{tabular}{p{3cm} l}
+    AWS & \level{1}{5} \\
+    Azure & \level{2}{5} \\
+    Git & \level{4}{5} \\
+    Google Cloud & \level{3}{5} \\
+    \LaTeX & \level{3}{5} \\
+    Linux & \level{4}{5} \\
+    Mac OS & \level{4}{5} \\
+    Maven & \level{3}{5} \\
+    Vim & \level{3}{5} \\
+    Windows & \level{3}{5} \\
+  \end{tabular}
+
+
+\end{dynamiccontents*}
+
+% Education and degree
+\rSection{Education} \par \bigskip
+\rSubSubSection{Rochester Institute of Technology} \par
+\rSubSubSection{B.S. Computer Science} \par
+GPA 3.85/4 \par
+Expected Graduation: 2023 \par
+Minor: Computer Engineering \par
+Immersion: Communications \par \bigskip
+
+
+% Employment information
+\rSection{Employment} \par
+
+% HTL
+\rSubSection{Herrick Technology Labs} $ \cdot $ Software Intern \hfill Sep. 2020 to Present \par
+Developed software for orchestrating a series of HTL products for a military contract. Handled making
+software design decisions in a multi-disciplinary environment. Evaluated and implemented various technologies
+to meet the specifications of the client. \par \bigskip
+
+% Blue Spiral
+\rSubSubSection{Blue Spiral} $ \cdot $ Software Developer \hfill June 2020 to Aug. 2020 \par
+Worked as research and development software developer. Explored UAV mapping systems, developed OCR solutions
+using Microsoft Azure, and developed an iOS application for on the spot employee assessments. Developed in
+Python, Swift, and C\#. \par \bigskip
+
+% SI
+\rSubSubSection{RIT ASC} $ \cdot $ Supplemental Instructor \hfill Aug. 2019 to May 2020 \par 
+Provides support for students taking The Mechanics of Programming, a class dedicated to learning C and an overview of Operating
+Systems. Support includes attending class and creating review sessions twice a week for students to improve themselves. \par \bigskip
+
+% Ball Bowler
+\rSubSubSection{Ball Bowler} $ \cdot $ Software Developer \hfill Jan. 2019 to Nov. 2019 \par
+Developed software for miniature bowling lanes including the user interface and game logic. Developed in Java with Javafx. \par \bigskip
+
+% Blue Spiral
+\rSubSubSection{Blue Spiral} $ \cdot $ Software Intern \hfill Aug. 2017 to Aug. 2018 \par
+Developed software for training image classification models and detecting the presence of ducks. Developed object
+detection with the Microsoft Hololens. Developed in Python. \par \bigskip
+
+% Valogix
+\rSubSubSection{Valogix} $ \cdot $ Software Intern \hfill July 2016 to Nov. 2018 \par
+Worked as a full stack web developer creating a web app to monitor over 100 remote servers. Created custom RESTful APIs to collect
+data from servers. Wrote test software to analyze Valogix's web application. Developed in Java using Spring Boot. \par \bigskip
+
+% Activities
+\rSection{Activities} \par
+
+% EVT
+\rSubSubSection{Electric Vehicle Team} $ \cdot $ Firmware Lead \hfill Dec. 2018 to Present \par
+Programming with mbed and STM's HAL on stm32s to create custom software for the REV 2 electric motorcycle. Developed a custom driver
+for Sendyne Ground Fault detection board as well as an error manager system to run across the motorcycle. \par \bigskip
+
+% ESW
+\rSubSubSection{Engineers for a Sustainable World} $ \cdot $ Treasurer \hfill Jan. 2019 to May 2020 \par
+Communicated with the rest of the eboard to distribute funds to various projects and activities. Created a database for the Water
+for South Sudan organization and competed in the Biomimicry Challenge. \par \bigskip
+
+% Awards
+\rSection{Awards} \par
+
+% Best IoT Hack
+\rSubSubSection{Best IoT Hack} $ \cdot $ \textit{Publicis Sapient} \hfill Feb. 2020 \par 
+Awarded for Laundramatic at Brickhack 6 for implementing IoT principles to make doing laundry on campus easier. \par \bigskip
+
+% UB Hackathon 3rd Place Award
+\rSubSubSection{UB Hacks 3rd Place Award} $ \cdot $ \textit{UB Hackathon Group} \hfill Nov. 2018 \par
+Awarded for Sketch It, award given to the 3rd best overall project. \par \bigskip
+
+% Big Red Hacks
+\rSubSubSection{Big Red Hacks Best First Time Hack} $ \cdot $ \textit{Cornell Hackathon Group} \hfill Oct. 2018 \par
+Won award for Petty Alexa given to the best team that was competing in their first hackathon \par \bigskip
+ 
+% Congressional App Challenge
+\rSubSubSection{Congressional App Challenge Winner} $ \cdot $ \textit{NY Congressional District 21} \hfill Dec 2017 \par
+Won a congressional award for the Saratoga GO Parking App and displayed the app in Washington, D.C.
+
+\end{document}
