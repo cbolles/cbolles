@@ -1,19 +1,20 @@
 Hi! I'm Collin Bolles a Computer Science student at RIT minoring in Computer Engineering. 
-I am currently between internships having finished one from August 2020 - December 2020 at
-Herrick Technology Labs in Maryland. Next I will be back in Rochester at D3 Engineering.
+I am in my final year in the undergrad program at RIT while also working
+part time at D3 engineering. For more information on my technical background,
+I encourage you to check out 
+[my resume](https://github.com/cbolles/cbolles/blob/master/resume/collin_bolles.pdf).
 
 ### Projects I'm Currently Working on
 #### Firmware Team Lead for the Electric Vehicle Team
-My role is to develop firmware for the electric motorcycles that our team is currently running.
-We develop with STM32F302R8s and SM32F446REs directly with the HAL to write our custom firmware.
-Currently we are working to finish our transition away from MBED to use mainly the HAL for
-interacting with the micro-controllers.
+EVT at RIT is a team dedicated to building and racing electric vehicles.
+As the firmware lead, I manage the software that is developed for the team.
+Mainly what we do is write custom firmware which runs on the custom designed
+electronics on our motorcycles.
 
-#### BLT (Boundary Limited Text extraction tool)
-The goal of the BLT is to allow users to provide images of their video game collection and for
-the system to automatically catalog all the games. This will be done by first detecting each
-individual box and running text extraction on the generated subimages. I have been working on
-identifying the individual video game boxes and prepping the images to run the text extraction.
+Currently we are working on our own software stack to run on the STM
+microcontollers. You can view the project named "EVT-core" at
+[this location](https://github.com/RIT-EVT/EVT-core) and can also
+check out our work in progress Read the Docs site [here](https://evt-core.readthedocs.io/en/latest/).
 
 
 ### Interests
