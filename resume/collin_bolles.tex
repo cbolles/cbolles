@@ -39,7 +39,7 @@
   \textbf{{\fontsize{0.35cm}{0.45cm}\selectfont \hbox{#1}}}
 }
 
-% Proficency Level View
+% Proficiency Level View
 \newcommand\level[2]{%
   \tikz{%
     \ifx#20
@@ -61,69 +61,83 @@
 
 \begin{dynamiccontents*}{leftcolumn}
 
+    % Name
+    {\fontsize{40}{50}\selectfont Collin}\par\bigskip
+    {\fontsize{40}{50}\selectfont Bolles}\par\bigskip
 
-  % Name
-  {\fontsize{40}{50}\selectfont Collin}\par\bigskip
-  {\fontsize{40}{50}\selectfont Bolles}\par\bigskip
+    % Contact information
+    \begin{tabular}{rl}
+        \faSend & collinbolles@gmail.com\\
+        \faGithub & cbolles \\
+        \faLinkedin & collinbolles \\
+        \faPhone & (518)441-4927
+    \end{tabular} \bigskip \par
 
-  % Contact information
-  \begin{tabular}{rl}
-    \faSend & collinbolles@gmail.com\\
-    \faGithub & cbolles \\
-    \faLinkedin & collinbolles \\
-    \faPhone & (518)441-4927
-  \end{tabular} \bigskip \par
+    % Summary
+    \rSection{Intro}
+        Senior Computer Science student graduating May 2022, looking for a full-time
+        opportunity starting in Fall 2022. Main interests in embedded and systems
+        level programming.
+    \par \bigskip
 
-  % Summary
-  \rSection{Intro}
-    Computer Science student entering final year of undergrad. Planning on applying to
-    a graduate program. Looking for a Summer 2022 co-op. Wide range of interests ranging
-    from embedded systems to cloud computing.
-  \par \bigskip
+    % Skills Sections
+    \rSection{Skills and Proficiency}
 
-  % Skills Sections
-  \rSection{Skills and Proficiency}
+    % Languages
+    \rSubSection{Languages} \par \bigskip
+    \vspace{-10pt}
+    \begin{tabular}{p{3cm} l}
+        ARM Assembly & \level{1}{5} \\
+        C & \level{4}{5} \\
+        C\# & \level{3}{5} \\
+        C++ & \level{3}{5} \\
+        HTML/CSS & \level{4}{5} \\
+        Java & \level{5}{5} \\
+        JavaScript & \level{3}{5} \\
+        Python & \level{5}{5} \\
+        Rust & \level{3}{5} \\
+    \end{tabular} \par \bigskip
 
-  % Languages
-  \rSubSection{Languages} \par \bigskip
-  \begin{tabular}{p{3cm} l}
-    ARM Assembly & \level{1}{5} \\
-    C & \level{4}{5} \\
-    C\# & \level{3}{5} \\
-    C++ & \level{3}{5} \\
-    HTML/CSS & \level{4}{5} \\
-    Java & \level{5}{5} \\
-    JavaScript & \level{3}{5} \\
-    Python & \level{5}{5}
-  \end{tabular} \par \bigskip
+    % Frameworks and Libraries
+    \rSubSection{Frameworks and Libraries} \par \bigskip
+    \vspace{-10pt}
+    \begin{tabular}{p{3cm} l}
+        Django & \level{3}{5} \\
+        Flask & \level{3}{5} \\
+        Mbed & \level{2}{5} \\
+        Node.js & \level{3}{5} \\
+        React.js & \level{3}{5} \\
+        Requests & \level{4}{5} \\
+        Spring Boot & \level{3}{5}
+    \end{tabular} \par \bigskip
 
-  % Frameworks and Libraries
-  \rSubSection{Frameworks and Libraries} \par \bigskip
-  \begin{tabular}{p{3cm} l}
-    Django & \level{3}{5} \\
-    Flask & \level{3}{5} \\
-    Mbed & \level{2}{5} \\
-    Node.js & \level{3}{5} \\
-    React.js & \level{3}{5} \\
-    Requests & \level{4}{5} \\
-    Spring Boot & \level{3}{5}
-  \end{tabular} \par \bigskip
+    % Tools and Environments
+    \rSubSection{Tools and Environments} \par \bigskip
+    \vspace{-10pt}
+    \begin{tabular}{p{3cm} l}
+        AWS & \level{1}{5} \\
+        Azure & \level{2}{5} \\
+        Git & \level{4}{5} \\
+        Google Cloud & \level{3}{5} \\
+        \LaTeX & \level{3}{5} \\
+        Linux & \level{4}{5} \\
+        Mac OS & \level{4}{5} \\
+        Maven & \level{3}{5} \\
+        Vim & \level{3}{5} \\
+        Windows & \level{3}{5} \\
+    \end{tabular}
 
-  % Tools and Environments
-  \rSubSection{Tools and Environments} \par \bigskip
-  \begin{tabular}{p{3cm} l}
-    AWS & \level{1}{5} \\
-    Azure & \level{2}{5} \\
-    Git & \level{4}{5} \\
-    Google Cloud & \level{3}{5} \\
-    \LaTeX & \level{3}{5} \\
-    Linux & \level{4}{5} \\
-    Mac OS & \level{4}{5} \\
-    Maven & \level{3}{5} \\
-    Vim & \level{3}{5} \\
-    Windows & \level{3}{5} \\
-  \end{tabular}
+    % Awards
+    \rSubSection{Awards} \par
 
+% Best IoT Hack
+\rSubSubSection{Best IoT Hack} $ \cdot $ \textit{Publicis Sapient} \par
+
+% UB Hackathon 3rd Place Award
+\rSubSubSection{UB Hacks 3rd Place Award} $ \cdot $ \textit{UB Hackathon Group} \par
+
+% Congressional App Challenge
+\rSubSubSection{Congressional App Challenge Winner} $ \cdot $ \textit{NY Congressional District 21} \par
 
 \end{dynamiccontents*}
 
@@ -133,75 +147,112 @@
 \rSubSubSection{B.S. Computer Science} \par
 GPA 3.85/4 \par
 Expected Graduation: May 2022 \par
-Minor: Computer Engineering \par
-Immersion: Communications \par
-
 
 % Employment information
 \rSection{Employment} \par
 
 % D3 Engineering
-\rSubSubSection{D3 Engineering} $ \cdot $ Engineering Technician \hfill Jan. 2021 to Present \par
-Developed kernel drivers for customer specific applications targeting D3 designed hardware built
-ontop of the Jetson Platform. Programmed mainly in C while also using a variety of other languages
-for user space development. \par \bigskip
+\rSubSubSection{D3 Engineering} $ \cdot $ Engineering Technician \hfill Jan. 2021 to Dec. 2022 \par
+\vspace{-10pt}
+\begin{itemize}
+    \setlength\itemsep{0pt}
+    \setlength{\parskip}{0pt}
+    \item Developed Linux Kernel drivers for cameras designed for embedded vision on the NVIDIA Jetson platform
+    \item Populated Linux device trees for newly designed hardware
+    \item Add features to NVIDIA Linux Kernel to expand camera platform capabilities
+    \item Solved hardware and software bugs using Linux and hardware analysis tools on custom hardware
+    \item Tools and Technology: C, Python, Linux Kernel, Git, Gerrit
+\end{itemize}
+\vspace{-10pt}
 
 % HTL
 \rSubSubSection{Herrick Technology Labs} $ \cdot $ Software Intern \hfill Sep. 2020 to Dec. 2020 \par
-Developed software for orchestrating a series of HTL products for a military contract. Handled making
-software design decisions in a multi-disciplinary environment. Evaluated and implemented various technologies
-to meet the specifications of the client. \par \bigskip
+\vspace{-10pt}
+\begin{itemize}
+    \setlength\itemsep{0pt}
+    \setlength{\parskip}{0pt}
+    \item Worked on an inter-disciplinary team tasked with producing a multi-faceted sensing solution for US military avionics
+    \item Wrote libraries to communicate with HTL radio solutions over a range of protocols including TCP over Ethernet and UART
+    \item Optimized radio based object tracking algorithm leveraging GPU based hardware acceleration
+    \item Tools and Technology: C++, Python, Git, Cuda
+\end{itemize}
+\vspace{-10pt}
 
 % Blue Spiral
 \rSubSubSection{Blue Spiral} $ \cdot $ Software Developer \hfill June 2020 to Aug. 2020 \par
-Worked as research and development software developer. Explored UAV mapping systems, developed OCR solutions
-using Microsoft Azure, and developed an iOS application for on the spot employee assessments. Developed in
-Python, Swift, and C\#. \par \bigskip
-
-% SI
-\rSubSubSection{RIT ASC} $ \cdot $ Supplemental Instructor \hfill Aug. 2019 to May 2020 \par
-Provides support for students taking The Mechanics of Programming, a class dedicated to learning C and an overview of Operating
-Systems. Support includes attending class and creating review sessions twice a week for students to improve themselves. \par \bigskip
+\vspace{-10pt}
+\begin{itemize}
+    \setlength\itemsep{0pt}
+    \setlength{\parskip}{0pt}
+    \item Wrote iOS application for on-the-spot employee performance reviews using SwiftUI
+    \item Updated existing image processing pipeline to use the newest Azure OCR API
+    \item Developed software to detect vegetation levels from done footage
+    \item Tools and Technology: C\#, Swift, Python
+\end{itemize}
+\vspace{-10pt}
 
 % Ball Bowler
 \rSubSubSection{Ball Bowler} $ \cdot $ Software Developer \hfill Jan. 2019 to Nov. 2019 \par
-Developed software for miniature bowling lanes including the user interface and game logic. Developed in Java with Javafx. \par \bigskip
+\vspace{-10pt}
+\begin{itemize}
+    \setlength\itemsep{0pt}
+    \setlength{\parskip}{0pt}
+    \item Designed and developed a UI for a miniature bowling lane
+    \item Implementing scoring logic and user interface on a LattePanda single board computer
+    \item Captured state of bowling pins using computer vision
+    \item Tools and Technology: Java, JavaFX
+\end{itemize}
+\vspace{-10pt}
 
 % Blue Spiral
 \rSubSubSection{Blue Spiral} $ \cdot $ Software Intern \hfill Aug. 2017 to Aug. 2018 \par
-Developed software for training image classification models and detecting the presence of ducks. Developed object
-detection with the Microsoft Hololens. Developed in Python. \par \bigskip
+\vspace{-10pt}
+\begin{itemize}
+    \setlength\itemsep{0pt}
+    \setlength{\parskip}{0pt}
+    \item Developed object detection training pipeline built on top of Tensorflow
+    \item Applied object detection pipeline for the detection of unwanted ducks
+    \item Incorporated object detection pipeline with the Microsoft Hololens
+    \item Tools and Technology: C\#, Python, C++, Tensorflow
+\end{itemize}
+\vspace{-10pt}
 
 % Valogix
 \rSubSubSection{Valogix} $ \cdot $ Software Intern \hfill July 2016 to Nov. 2018 \par
-Worked as a full stack web developer creating a web app to monitor over 100 remote servers. Created custom RESTful APIs to collect
-data from servers. Wrote test software to analyze Valogix's web application. Developed in Java using Spring Boot. \par
+\vspace{-10pt}
+\begin{itemize}
+    \setlength\itemsep{0pt}
+    \setlength{\parskip}{0pt}
+    \item Implement a system level automated testing suite for Valogix web application
+    \item Produced custom web API incorporated into Valogix's servers for system health information
+    \item Developed a web application for keeping track of the over 100 deployed applications
+    \item Resolved bugs and incorporated features in the existing Valogix code base
+    \item Tools and Technology: Java, Spring, Spring Boot, PostgreSQL, Groovy
+\end{itemize}
+\vspace{-10pt}
 
 % Activities
 \rSection{Activities} \par
 
 % EVT
-\rSubSubSection{Electric Vehicle Team} $ \cdot $ Firmware Lead \hfill Dec. 2018 to Present \par
-Programming with mbed and STM's HAL on stm32s to create custom software for the REV 2 electric motorcycle. Developed a custom driver
-for Sendyne Ground Fault detection board as well as an error manager system to run across the motorcycle. \par \bigskip
-
-% ESW
-\rSubSubSection{Engineers for a Sustainable World} $ \cdot $ Treasurer \hfill Jan. 2019 to May 2020 \par
-Communicated with the rest of the eboard to distribute funds to various projects and activities. Created a database for the Water
-for South Sudan organization and competed in the Biomimicry Challenge. \par
-
-% Awards
-\rSection{Awards} \par
-
-% Best IoT Hack
-\rSubSubSection{Best IoT Hack} $ \cdot $ \textit{Publicis Sapient} \hfill Feb. 2020 \par
-Awarded for Laundramatic at Brickhack 6 for implementing IoT principles to make doing laundry on campus easier. \par
-
-% UB Hackathon 3rd Place Award
-\rSubSubSection{UB Hacks 3rd Place Award} $ \cdot $ \textit{UB Hackathon Group} \hfill Nov. 2018 \par
-Awarded for Sketch It, award given to the 3rd best overall project. \par
-% Congressional App Challenge
-\rSubSubSection{Congressional App Challenge Winner} $ \cdot $ \textit{NY Congressional District 21} \hfill Dec 2017 \par
-Won a congressional award for the Saratoga GO Parking App and displayed the app in Washington, D.C.
+\rSubSubSection{Electric Vehicle Team}\par
+Firmware Lead \hfill May 2020 to Present \par
+Firmware Member \hfill Dec. 2018 to May 202
+\vspace{-10pt}
+\begin{itemize}
+    \setlength\itemsep{0pt}
+    \setlength{\parskip}{0pt}
+    \item Develop a custom software library for developing firmware on EVT produced hardware (EVT-core)
+    \begin{itemize}
+        \setlength\itemsep{0pt}
+        \setlength{\parskip}{0pt}
+        \item Produce object oriented based software layed on top of the STM32 Hardware Abstraction Layer (HAL)
+        \item Wrote drivers to support various communication protocols in EVT-core including CAN, UART, I2C, and PWM
+    \end{itemize}
+    \item Designed and developed firmware for the EVT produced battery management system
+    \item Added support for CANopen to EVT-core for communication across the motorcycle systems
+    \item Develop drivers for communicating with Sendyne GFD, TI battery management chip, and STM32 peripherals
+\end{itemize}
+\vspace{-10pt}
 
 \end{document}
