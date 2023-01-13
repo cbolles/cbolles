@@ -34,7 +34,3 @@ One of the critical systems on the DEV-1 (Dirt Electric Vehicle) project is the 
 * UAVs
 
 For information about me, feel free to check out my resume in this repo.
-
-![Collin's GitHub stats](https://github-readme-stats.vercel.app/api?username=cbolles&count_private=true)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=cbolles)](https://github.com/anuraghazra/github-readme-stats)
