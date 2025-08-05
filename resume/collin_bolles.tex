@@ -3,7 +3,7 @@
 \usepackage{flowfram}% http://ctan.org/pkg/flowfram
 \usepackage{graphicx,lipsum}% http://ctan.org/pkg/{graphicx,lipsum}
 \usepackage{anyfontsize}
-\usepackage{fontawesome}
+\usepackage{fontawesome5}
 \usepackage{xcolor}
 \usepackage{tikz}
 
@@ -46,13 +46,13 @@
     \else
       \foreach \i in {1,...,#2} {
         \filldraw[black!20] (\i ex,0) circle (0.4ex);
-      };
+      }
     \fi
     \ifx#10
     \else
       \foreach \i in {1,...,#1} {
         \filldraw[black] (\i ex,0) circle (0.4ex);
-      };
+      }
     \fi
   }
 }
@@ -67,9 +67,9 @@
 
     % Contact information
     \begin{tabular}{rl}
-        \faSend & collinbolles@gmail.com\\
-        \faGithub & cbolles \\
-        \faLinkedin & collinbolles
+      \faIcon{envelope} & collinbolles@gmail.com\\
+      \faGithub & cbolles \\
+      \faLinkedin & collinbolles
     \end{tabular} \bigskip \par
 
     % Summary
@@ -182,33 +182,12 @@ GPA 3.84/4 \par
     \input{content/blue_spiral_intern.tex}
 \vspace{-10pt}
 
-% Valogix
-\rSubSubSection{Valogix} $ \cdot $ Software Intern \hfill July 2016 to Nov. 2018 \par
-\vspace{-10pt}
-    \input{content/valogix.tex}
-\vspace{-10pt}
-
 % Activities
 \rSection{Activities} \par
 
 % EVT
 \rSubSubSection{Electric Vehicle Team}\par
-Firmware Lead \hfill May 2020 to May 2022 \par
-Firmware Member \hfill Dec. 2018 to May 2020
-\vspace{-10pt}
-\begin{itemize}
-    \setlength\itemsep{0pt}
-    \setlength{\parskip}{0pt}
-    \item Develop a custom software library for developing firmware on EVT produced hardware (EVT-core)
-    \begin{itemize}
-        \setlength\itemsep{0pt}
-        \setlength{\parskip}{0pt}
-        \item Produce object oriented based software layed on top of the STM32 Hardware Abstraction Layer (HAL)
-        \item Wrote drivers to support various communication protocols in EVT-core including CAN, UART, I2C, and PWM
-    \end{itemize}
-    \item Designed and developed firmware for the EVT produced battery management system
-    \item Added support for CANopen to EVT-core for communication across the motorcycle systems
-\end{itemize}
+  \input{content/evt.tex}
 \vspace{-10pt}
 
 \end{document}
