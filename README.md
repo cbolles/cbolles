@@ -2,6 +2,10 @@ Hello, I'm Collin Bolles, a research software engineer for SAIL at Boston Univer
 
 ## Projects I'm Currently Working on
 
+### Spatial Computing for Robotics Control Algorithms
+
+VR and AR headsets are being more and more accessible to the average user. This new level of access opens up new methods for interacting with both the physical and digital world. This project being done for my masters thesis in robotics and autonomous systems leveraged AR technology to make resoning through robotics control alogorithms easier. The idea being that by leveraging AR platforms, digital concepts such as path planning way points, artifical potential fields, etc can be overlayed onto the physical world making it easier to debug and reason through the control algorithms. The platform involves a Meta Quest 3, cooresponding app written in Unity, ROS2 integration, and support for visualizations using rviz's marker system.
+
 ### SignLab (Sign Language based Platform)
 
 At SAIL I am currently working on a project called SignLab. SignLab is a tool designed to give researchers the ability to tag short videos. The intention is to produce a flexible enough tool that many researchers will be able to utilize the interface. The immediate goal is to support ASL based research involving tagging short videos containing signs based on the goals of the research study.
