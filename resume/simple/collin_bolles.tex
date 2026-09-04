@@ -1,169 +1,133 @@
 \documentclass{article}
-\usepackage[margin=0.25in]{geometry}% http://ctan.org/pkg/geometry
-\usepackage{flowfram}% http://ctan.org/pkg/flowfram
-\usepackage{graphicx,lipsum}% http://ctan.org/pkg/{graphicx,lipsum}
-\usepackage{anyfontsize}
-\usepackage{multicol}
-\usepackage{fontawesome}
-\usepackage{xcolor}
-\usepackage{tikz}
+\usepackage[margin=0.4in]{geometry}% http://ctan.org/pkg/geometry
+\usepackage{enumitem}
 
 % Set no indents before paragraphs
 \setlength{\parindent}{0in}
 
-% Custom color creationg
-\definecolor{header-blue}{RGB}{3, 152, 252}
+% Tighten default list spacing
+\setlist{topsep=1pt, itemsep=0pt, parsep=0pt, partopsep=0pt}
 
 % Custom section header
 \newcommand{\rSection}[1] {
-  \textcolor{header-blue} {
-    \textbf{{\fontsize{0.5cm}{0.45cm}\selectfont \hbox{#1}}} \\
-    \rule{0.30\textwidth}{0.1cm}
-  }
+  \smallskip
+  {\large\bfseries #1} \\
+  \rule{\linewidth}{0.4pt}
 }
 
 % Custom sub-section header
 \newcommand{\rSubSection}[1] {
-  \textbf{{\fontsize{0.4cm}{0.45cm}\selectfont \hbox{#1}}}
+  \textbf{#1}
 }
 
 % Custom sub-sub-section header
 \newcommand{\rSubSubSection}[1] {
-  \textbf{{\fontsize{0.35cm}{0.45cm}\selectfont \hbox{#1}}}
+  \textbf{#1}
 }
 
 \begin{document}
+\pagestyle{empty}
 
-\begin{multicols}{2}
+{\LARGE\bfseries Collin Bolles} \par
+\medskip
+collinbolles@gmail.com $\cdot$ github.com/cbolles $\cdot$ linkedin.com/in/collinbolles $\cdot$ (518) 441-4927 \par
 
-    {\fontsize{30}{30}\selectfont Collin}
-    {\fontsize{30}{30}\selectfont Bolles}\par\bigskip
+% Education and degree
+\rSection{Education} \par
+\vspace{-15pt}
+\rSubSubSection{Boston University} \par
+M.S. Robotics and Autonomous Systems \par
 
-    % Contact information
-    \begin{tabular}{rl}
-        \faSend & collinbolles@gmail.com\\
-        \faGithub & cbolles \\
-        \faLinkedin & collinbolles \\
-        \faPhone & (518)441-4927
-    \end{tabular} \bigskip \par
-
-    \columnbreak
-
-    % Education and degree
-    \rSection{Education} \par \bigskip
-    \rSubSubSection{Rochester Institute of Technology} \par
-    \rSubSubSection{B.S. Computer Science} \par
-    GPA 3.85/4 \par
-    Expected Graduation: May 2022 \par
-
-
-\end{multicols}
+\rSubSubSection{Rochester Institute of Technology} \par
+B.S. Computer Science \par
 
 % Employment information
 \rSection{Employment} \par
+\vspace{-15pt}
+
+% SAIL
+\rSubSubSection{Software and Application Innovation Lab}\par
+Senior Fullstack Software Engineer \hfill Nov. 2025 to Present \par
+Fullstack Software Engineer \hfill May 2022 to Nov. 2025 \par
+
+\begin{itemize}[leftmargin=*]
+  \item Developed custom fullstack applications for R1 researchers
+  \item Handled migration of 20+ projects from Red Hat OpenShift (K8s) to AWS
+  \item Scoped, owned, wrote, and deployed multiple fullstack applications from start to finish
+  \item Tools and Technology: AWS, Kubernetes, OpenShift, Typescript, React, NestJS, MongoDB, PostgreSQL
+\end{itemize}
 
 % D3 Engineering
-\rSubSubSection{D3 Engineering} $ \cdot $ Engineering Technician \hfill Jan. 2021 to Dec. 2021 \par
-\vspace{-10pt}
-\begin{itemize}
-    \setlength\itemsep{0pt}
-    \setlength{\parskip}{0pt}
-    \item Developed Linux Kernel drivers for cameras designed for embedded vision on the NVIDIA Jetson platform
-    \item Populated Linux device trees for newly designed hardware
-    \item Add features to NVIDIA Linux Kernel to expand camera platform capabilities
-    \item Solved hardware and software bugs using Linux and hardware analysis tools on custom hardware
-    \item Tools and Technology: C, Python, Linux Kernel, Git, Gerrit
+\vspace{1pt}
+\rSubSubSection{D3 Engineering} $\cdot$ Embedded Engineering Technician \hfill Jan. 2021 to Dec. 2021 \par
+\begin{itemize}[leftmargin=*]
+    \item Developed hardware drivers for embedded computer vision applications
+    \item Customized NVIDIA/Linux Kernel to expand vision capabilities
+    \item Debugged newly developed hardware systems
+    \item Tools and Technology: C, Python, Linux Kernel, Git, Gerrit, Logic Analyzer
 \end{itemize}
-\vspace{-10pt}
 
 % HTL
-\rSubSubSection{Herrick Technology Labs} $ \cdot $ Software Intern \hfill Sep. 2020 to Dec. 2020 \par
-\vspace{-10pt}
-\begin{itemize}
-    \setlength\itemsep{0pt}
-    \setlength{\parskip}{0pt}
+\vspace{1pt}
+\rSubSubSection{Herrick Technology Labs} $\cdot$ Software Intern \hfill Sep. 2020 to Dec. 2020 \par
+\begin{itemize}[leftmargin=*]
     \item Worked on an inter-disciplinary team tasked with producing a multi-faceted sensing solution for US military avionics
     \item Wrote libraries to communicate with HTL radio solutions over a range of protocols including TCP over Ethernet and UART
-    \item Optimized radio based object tracking algorithm leveraging GPU based hardware acceleration
     \item Tools and Technology: C++, Python, Git, Cuda
 \end{itemize}
-\vspace{-10pt}
 
 % Blue Spiral
-\rSubSubSection{Blue Spiral} $ \cdot $ Software Developer \hfill June 2020 to Aug. 2020 \par
-\vspace{-10pt}
-\begin{itemize}
-    \setlength\itemsep{0pt}
-    \setlength{\parskip}{0pt}
+\vspace{1pt}
+\rSubSubSection{Blue Spiral} $\cdot$ Software Developer \hfill June 2020 to Aug. 2020 \par
+\begin{itemize}[leftmargin=*]
     \item Wrote iOS application for on-the-spot employee performance reviews using SwiftUI
-    \item Updated existing image processing pipeline to use the newest Azure OCR API
-    \item Developed software to detect vegetation levels from done footage
+    \item Modernized OCR system using Azure OCR API
+    \item Leveraged satellite imagery and computer vision techniques for monitoring vegetation health
     \item Tools and Technology: C\#, Swift, Python
 \end{itemize}
-\vspace{-10pt}
 
 % Ball Bowler
-\rSubSubSection{Ball Bowler} $ \cdot $ Software Developer \hfill Jan. 2019 to Nov. 2019 \par
-\vspace{-10pt}
-\begin{itemize}
-    \setlength\itemsep{0pt}
-    \setlength{\parskip}{0pt}
+\vspace{1pt}
+\rSubSubSection{Ball Bowler} $\cdot$ Software Developer \hfill Jan. 2019 to Nov. 2019 \par
+\begin{itemize}[leftmargin=*]
     \item Designed and developed a UI for a miniature bowling lane
-    \item Implementing scoring logic and user interface on a LattePanda single board computer
     \item Captured state of bowling pins using computer vision
     \item Tools and Technology: Java, JavaFX
 \end{itemize}
-\vspace{-10pt}
 
 % Blue Spiral
-\rSubSubSection{Blue Spiral} $ \cdot $ Software Intern \hfill Aug. 2017 to Aug. 2018 \par
-\vspace{-10pt}
-\begin{itemize}
-    \setlength\itemsep{0pt}
-    \setlength{\parskip}{0pt}
+\vspace{1pt}
+\rSubSubSection{Blue Spiral} $\cdot$ Software Intern \hfill Aug. 2017 to Aug. 2018 \par
+\begin{itemize}[leftmargin=*]
     \item Developed object detection training pipeline built on top of Tensorflow
     \item Applied object detection pipeline for the detection of unwanted ducks
     \item Incorporated object detection pipeline with the Microsoft Hololens
     \item Tools and Technology: C\#, Python, C++, Tensorflow
 \end{itemize}
-\vspace{-10pt}
 
 % Valogix
-\rSubSubSection{Valogix} $ \cdot $ Software Intern \hfill July 2016 to Nov. 2018 \par
-\vspace{-10pt}
-\begin{itemize}
-    \setlength\itemsep{0pt}
-    \setlength{\parskip}{0pt}
-    \item Implement a system level automated testing suite for Valogix web application
-    \item Produced custom web API incorporated into Valogix's servers for system health information
-    \item Developed a web application for keeping track of the over 100 deployed applications
+\vspace{1pt}
+\rSubSubSection{Valogix} $\cdot$ Software Intern \hfill July 2016 to Nov. 2018 \par
+\begin{itemize}[leftmargin=*]
+    \item Created a platform for real time monitoring of 100+ customer VMs
     \item Resolved bugs and incorporated features in the existing Valogix code base
     \item Tools and Technology: Java, Spring, Spring Boot, PostgreSQL, Groovy
 \end{itemize}
-\vspace{-10pt}
 
 % Activities
 \rSection{Activities} \par
 
 % EVT
+\vspace{-15pt}
 \rSubSubSection{Electric Vehicle Team}\par
-Firmware Lead \hfill May 2020 to Present \par
-Firmware Member \hfill Dec. 2018 to May 202
-\vspace{-10pt}
-\begin{itemize}
-    \setlength\itemsep{0pt}
-    \setlength{\parskip}{0pt}
-    \item Develop a custom software library for developing firmware on EVT produced hardware (EVT-core)
-    \begin{itemize}
-        \setlength\itemsep{0pt}
-        \setlength{\parskip}{0pt}
-        \item Produce object oriented based software layed on top of the STM32 Hardware Abstraction Layer (HAL)
-        \item Wrote drivers to support various communication protocols in EVT-core including CAN, UART, I2C, and PWM
-    \end{itemize}
-    \item Designed and developed firmware for the EVT produced battery management system
-    \item Added support for CANopen to EVT-core for communication across the motorcycle systems
-    \item Develop drivers for communicating with Sendyne GFD, TI battery management chip, and STM32 peripherals
+Firmware Lead \hfill May 2020 to May 2022 \par
+Firmware Member \hfill Dec. 2018 to May 2020 \par
+\begin{itemize}[leftmargin=*]
+    \item Firmware development for custom built electric motorcycles
+    \item Created firmware for a high-demand battery management system
+    \item Produced a highly adaptable software interface layer for the STM32 platform
+    \item Developed drivers across communication protocols (CAN, UART, I2C, PWM)
+    \item Unified the inter-board communication using CANopen
 \end{itemize}
-\vspace{-10pt}
 
 \end{document}
